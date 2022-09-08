@@ -38,16 +38,45 @@ v1
 Replicate the following matrix in R and call it A.
 
 ```{r, comment=NA}
-a <- seq(from = 20, to = 39, by = 1)
+a <- matrix(20:39,4,5, byrow = TRUE)
 a
 
 ```
+```{r, comment=NA}
+colnames(a)<-(c('A','B','C','D','E'))
+a
+```
 
+```{r, comment=NA}
+B <- a[c(2,4), c("B", "D")]
+B
+```
+
+```{r, comment=NA}
+t(B)
+```
+
+```{r, comment=NA}
+B.inverse <- solve(B)
+B.inverse
+```
 
 
 ```{r, comment=NA}
-
+B2 <- B.inverse%*%B
+B2
 ```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
