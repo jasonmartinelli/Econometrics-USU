@@ -67,7 +67,11 @@ B2 <- B.inverse%*%B
 B2
 ```
 
+```{r, comment=NA}
+df <- mtcars
+head(df)
 
+```
 
 
 
